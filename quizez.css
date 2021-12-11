@@ -11,6 +11,7 @@ body{
     min-height: 80px;
     /* border: 1px solid; */
     padding: 23px 15px;
+    /* border-bottom: 1px solid #00000026; */
 }
 #navBar div{
     display: inline-block;
@@ -29,7 +30,7 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
 }
-#navBar a:nth-of-type(1){
+#navBar a:nth-of-type(3){
     color: #ff685f;
 }
 #navBar a:hover{
@@ -54,4 +55,61 @@ body{
 #navBar button:hover{
     background-color: #03a4ed;
     transition: all 0.5s ease-in-out;
+}
+
+.quiz-courses{
+    position: relative;
+    padding-top: 100px;
+}
+.left-baner{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background-image: url("images/baner-dec-left\ 11.png");
+    background-repeat: no-repeat;
+}
+.right-baner{
+    width: 330px;
+    height: 300px;
+    background-image: url("images/services-right-dec.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quiz-courses .courses-cont{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.quiz-courses .courses-cont .course{
+    margin:0 25px 30px;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+.quiz-courses .courses-cont .course img{
+    width: 250px;
+    height: 300px;
+    transition: 0.5s;
+}
+.quiz-courses .courses-cont .course .image-info{
+    background: rgb(255, 255, 255);
+    padding: 20px 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.quiz-courses .courses-cont .course:hover img{
+    transform: scale(1.2) rotate(5deg);
+}
+.quiz-courses .courses-cont .course:hover .image-info{
+    margin-top: -62px;
+    position: relative;
+    z-index: 9;
 }
