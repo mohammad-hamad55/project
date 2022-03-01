@@ -97,7 +97,7 @@ body{
     position: relative;
 
 }
-#logInForm form{
+.form-style{
     height: 60%;
     width:70%;
     margin-left: 15%;
@@ -109,9 +109,9 @@ body{
     position: absolute;
     
 }
-#logInForm form:nth-of-type(2){
+/* #logInForm form:nth-of-type(2){
     display: none;
-}
+} */
 
 #logInForm form:nth-of-type(2) input{
     margin-top: 3%;
@@ -160,5 +160,8 @@ body{
 #logInForm form button:nth-of-type(2):hover{
     color: black;
     transition: all 0.5s ease-in-out;
+}
+.hidden{
+    display: none;
 }
 

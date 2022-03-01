@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="./login.js" defer></script>
     <title>log in</title>
 </head>
 <body>
@@ -26,19 +27,19 @@
               <img src="images/secu.svg">
           </div>
           <div id="logInForm">
-              <form>
+              <form class="form-style">
                   <input type="text" placeholder="User Name">
                   <input type="password" placeholder="Password">
                   <button type="submit">Log In</button>
-                  <button type="button">Sign Up</button>
+                  <button type="button" id="sign-up">Sign Up</button>
               </form>
-              <form>
+              <form class="form-style hidden">
                 <input type="text" placeholder="User Name">
                 <input type="email" placeholder="E-mail">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Confirm Password">
                 <button type="submit">Submit</button>
-                <button type="button">Log In</button>
+                <button type="button" id="log-in">Log In</button>
               </form>
               
 
@@ -47,6 +48,8 @@
       <img src="images/contact-left-dec.png">
       <img src="images/contact-dec.png">
       </section>
+
+
       
 </body>
 </html>
