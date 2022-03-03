@@ -7,21 +7,21 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-#navBar{
+.nav-bar{
     min-height: 80px;
     /* border: 1px solid; */
     padding: 23px 15px;
 }
-#navBar div{
+.nav-bar div{
     display: inline-block;
     margin-left: 28vw;
 }
-#navBar h2{
+.nav-bar h2{
   display: inline-block;
   color: #03a4ed;
   margin-left: 2vw;
 }
-#navBar a{
+.nav-bar a{
     text-decoration: none;
     color: black;
     text-transform: capitalize;
@@ -29,14 +29,14 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
 }
-#navBar a:nth-of-type(1){
+.nav-bar a:nth-of-type(1){
     color: #ff685f;
 }
-#navBar a:hover{
+.nav-bar a:hover{
     color: #ff685f;
     transition: all 0.3s ease-in-out;
 }
-#navBar button{
+.nav-bar button{
     display: inline-block;
     /* width: 70px;
     height:40px; */
@@ -51,7 +51,7 @@ body{
     letter-spacing: 1px;
 
 }
-#navBar button:hover{
+.nav-bar button:hover{
     background-color: #03a4ed;
     transition: all 0.5s ease-in-out;
 }
