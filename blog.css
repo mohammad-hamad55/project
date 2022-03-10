@@ -118,12 +118,54 @@ header .menu-toggler button{
 /* Recent BLogs */
 .recent-cont{
   background: #ffffff;
+  position: relative;
 }
+
+.left-banner{
+  position: absolute;
+  /* top: 5rem; */
+  overflow: hidden;
+  animation: left-banner 5s ease-in-out  forwards infinite;
+}
+@keyframes left-banner {
+  0%{
+    transform: rotate(0deg) translate(5rem,1rem);
+  }
+  50%{
+    transform: rotate(50deg) translate(1rem,-1rem);
+  }
+  100%{
+    transform: rotate(0deg) translate(5rem,1rem);
+  }
+}
+
+.right-banner{
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  /* top: 5rem; */
+  z-index: 1;
+  animation: right-banner 10s linear forwards infinite;
+}
+@keyframes right-banner {
+  0%{
+    height: 0%;
+  }
+  50%{
+    height: 100%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+
 .recent-blogs-section{
   flex-direction: column;
   padding: .8rem;
   box-shadow: 1px 0 8px #ccc;
   margin: 0 auto;
+  position: relative;
+  z-index: 99;
   /* background: #afb6cd; */
 }
 .header-text{
@@ -160,10 +202,10 @@ header .menu-toggler button{
   z-index: 10;
   bottom: 0;
   padding: 1rem .5rem;
-  height: 18%;
+  height: 14%;
   max-height: 40%;
   width: 100%;
-  background: #f1f1f1;
+  background: #f1f1f1be;
   transition: 0.25s;
 }
 
@@ -201,7 +243,7 @@ header .menu-toggler button{
 .recent-blogs-section .right-side{
   /* text-align: center; */
   /* color: #03a4ed; */
-  background: #f1f1f1;
+  background: #f1f1f177;
   padding: 1rem;
 }
 .recent-blogs-section .right-side .header{
