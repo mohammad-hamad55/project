@@ -60,7 +60,7 @@ header .menu ul{
   visibility: hidden;
   transform: translateX(-50%);
   transition: 0.5s;
-  z-index: 99;
+  z-index: 9999;
 }
 header .menu ul.active{
   opacity: 1;
@@ -123,6 +123,7 @@ header .menu-toggler button{
 
 .left-banner{
   position: absolute;
+  display: none;
   /* top: 5rem; */
   overflow: hidden;
   animation: left-banner 5s ease-in-out  forwards infinite;
@@ -294,6 +295,9 @@ header .menu-toggler button{
   }
 }
 @media screen and (min-width:550px) {
+  .left-banner{
+    display: block;
+  }
   .recent-blogs-container{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,13rem);
