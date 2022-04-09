@@ -219,6 +219,7 @@ header .menu-toggler button{
   position: absolute;
   bottom: 5%;
   right: 5%;
+  cursor: pointer;
 }
 
 .hidden{
