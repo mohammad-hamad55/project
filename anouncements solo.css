@@ -55,7 +55,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .anounments-solo {
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 100%;
   /* height: 670px; */
   height: fit-content;
@@ -71,7 +71,7 @@ body {
 }
 .anouncement {
   position: absolute;
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 50%;
   /* height: 90%; */
   margin: 3% 0 0 6.5%;
@@ -91,6 +91,7 @@ body {
   /* width: 100%; */
   line-height: 1.4rem;
   margin: 60px 0;
+
 }
 .anouncement i {
   margin: 13px 15px 13px 0;
@@ -111,36 +112,76 @@ body {
   position: absolute;
   height: 900px;
   width: 32%;
-  border: 1px solid;
+  /* border: 1px solid; */
   right: 6.5%;
   margin: 3% 0;
   list-style: none;
 }
-.other-anouncements li {
-  border: 1px solid;
- display: grid;
+.single-li {
+  border-bottom: 3px solid #9b9b9b;
+  
+  position: relative;
+  /* padding: 3%; */
   margin: 2rem 0;
   height: 250px;
+
 }
-.other-anouncements li:first-of-type,
-.other-anouncements li:last-of-type {
+.single-li > *{
+position: absolute;
+left: 1.5%;
+/* border: 1px solid; */
+}
+.single-li:first-of-type,
+.single-li:last-of-type {
   margin: 0;
 }
-.other-anouncements li h3{
- 
-}
-.other-anouncements li i{
- 
-}
-.other-anouncements li i span{
-  
-}
-.other-anouncements li button{
-  
-}
-.other-anouncements li > img{
-  
-  width: 50%;
-  height: 50%;
-  
-}
+.single-li h3{
+   width: 97%; 
+   color: #696969;
+   height: 10%;
+  top: 2%;
+  left:1.5%;
+  overflow: hidden;
+} 
+.single-li img{
+   width: 50%;
+   height:80%;
+   top:17% ;
+ }
+ .single-li i{
+   
+   left: 53%;
+   color: #55bbeb;
+   text-transform: capitalize;
+   font-size: 20px;
+ }
+ .single-li i span{
+  color: #9b9b9b;
+  font-size: 20px;
+  margin-left: 10px;
+ }
+ .single-li i:nth-of-type(1){
+   top: 25%;
+ }
+ .single-li i:nth-of-type(2){
+  top: 40%;
+ }
+ .single-li button{
+  width:30%;
+  height: 15%;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #03a4ed;
+  font-weight: bold;
+  font-size: 20px;
+   top: 70%;
+   left: 62%;
+   border: none;
+ }
+ .single-li button:hover{
+   color: #9b9b9b;
+   transform: scale(1.05,1.05);
+   transition: all 0.5s ease-in-out;
+ }
+

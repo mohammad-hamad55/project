@@ -1,0 +1,12 @@
+.parent{
+    border: 1px solid;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,50px);
+}
+.parent div{
+    background-color: aqua;
+   
+    border: 1px solid;
+}
