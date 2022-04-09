@@ -9,7 +9,7 @@ const readMoreHandler = () => {
   // const modal = tempEl.querySelectorAll("div")[1];
   // document.body.insertAdjacentElement("afterbegin", backGround);
   // backGround.appendChild(modal);
-  window.open('./blog.html','_self');
+  window.open('./anouncement solo.html','_self');
 };
 for (const button of readButtons) {
   button.addEventListener("click", readMoreHandler);
