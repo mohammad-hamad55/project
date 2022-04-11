@@ -344,9 +344,6 @@ header .menu-toggler button{
   }
 }
 @media screen and (min-width:930px) {
-  header a.logo{
-    /* margin-left: 70px; */
-  }
   header .menu{
     padding: 0;
     margin-right: 50px;
@@ -393,9 +390,6 @@ header .menu-toggler button{
   .recent-blogs-section .right-side{
     /* flex-basis: 20%; */
     min-width: 370px;
-  }
-  .recent-blogs-container{
-    /* grid-template-columns: auto auto; */
   }
   .recent-blogs-container .blog{
     margin: 5px;
