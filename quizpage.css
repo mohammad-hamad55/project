@@ -127,30 +127,70 @@ header .menu-toggler button{
   }
 }
 
-
+.quiz-name{
+  width: fit-content;
+  margin: 50px auto 0;
+  padding: 3px 15px;
+  border-bottom: 2px solid black;
+}
 .quiz-section{
   padding: 50px 0;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.animation{
+  position: absolute;
+  top: 18rem;
+  left: 0;
+  animation: rotate 2s linear infinite forwards;
+  z-index: -1;
+}
+.quiz-section .subject-redirect{
+  padding: 50px;
+  height: fit-content;
+  background-image: url("./images/card-image.png");
+  background-size: cover;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+.quiz-section .subject-redirect a{
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  background: #03a4ed;
+  border-radius: 10px;
+  color: white;
+  transition: 0.5s box-shadow;
+}
+.quiz-section .subject-redirect a:hover{
+  box-shadow: 0 250px #ff685f inset;
 }
 .quiz-section .quiz-container{
-  width: 900px;
-  margin: 0 auto;
-  /* height: 80vh; */
-  /* overflow-y: scroll; */
+  width: 1100px;
+  max-width: 100%;
   border-radius: 12px;
-  box-shadow: 1px 1px 10px rgb(224, 224, 224);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 }
 .quiz-section .quiz-container form{
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: 20px;
-  background: #f1f1f1;
+  z-index: 10;
+  /* background: #f1f1f1; */
 }
 .quiz-section .quiz-container form .quiz{
   margin: 15px 0;
   background: white;
   padding: 15px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.459);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 }
 
 .quiz-section .quiz-container form .quiz >div>div{
@@ -224,4 +264,26 @@ header .menu-toggler button{
 
 .hidden{
   display: none;
+}
+
+
+@media (max-width:1420px){
+  .animation{
+    top: 0;
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotatez(0deg);
+    /* top: 18rem; */
+  }
+  50%{
+    transform: rotatez(180deg);
+    /* top: 20rem; */
+  }
+  100%{
+    transform: rotatez(360deg);
+    /* top: 18rem; */
+  }
 }
