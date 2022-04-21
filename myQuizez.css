@@ -172,6 +172,8 @@ font-size: 20px;
     text-transform: capitalize;
     border-radius: 5px;
     /* font-weight: bold; */
+    animation: li-blink 0.7s ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 .single-qustion ul li:hover{
     background-color: #ff392b67; 
@@ -193,4 +195,19 @@ font-size: 20px;
     background-color:  #ffc2bd;
     padding-top: 2px;
    
+}
+
+@keyframes li-blink {
+    0%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
