@@ -124,46 +124,78 @@ header .menu-toggler button{
     display: none;
   }
 
+}
 
+.subject > h2{
+  width: fit-content;
+  margin: 30px auto;
+  padding: 10px 40px;
+  box-shadow: 1px 1px 8px #ccc;
+  border-radius: 20px;
+}
+.subject .info-cont{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.subject ul{
+  list-style-type: none;
+}
+.subject .info-cont .slides{
+  padding: 30px;
+  box-shadow: 1px 1px 10px #dfdfdf;
+  background-image: url("./images/card-image2.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  margin-top: 30px;
+}
+.subject .info-cont .slides ul{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
+.subject .info-cont .slides ul li a{
+  padding: 10px 15px;
+  background: #03a4ed;
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+.subject .info-cont .quiz-section{
+  padding: 30px;
+  background-image: url("./images/card-image.png");
+  background-size: cover;
+  box-shadow: 1px 1px 10px #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 35rem;
+  margin-top: 30px;
+}
+.subject .info-cont .quiz-section ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* max-width: 450px; */
+}
+.subject ul li{
+  margin-top: 35px;
+  text-align: center;
 
-  .recent-blogs-section{
-    grid-template-columns: 1fr 400px;
-    max-width: 1530px;
-    margin-top: 10px;
-    box-shadow: initial;
-    /* background: #131417; */
-  }
-  .recent-blogs-section .left-side{
-    /* flex-basis: 80%; */
-    margin-right: 30px; 
-  }
-  .recent-blogs-section .right-side{
-    /* flex-basis: 20%; */
-    min-width: 370px;
-  }
-  .recent-blogs-container .blog{
-    margin: 5px;
-    /* max-width: 350px; */
-  }
-
-  .recent-blogs-section .right-side a.blog .image-cont{
-    height: 6rem;
-    width: 30%;
-  }
-  .recent-blogs-section .right-side a.blog .image-cont img{
-    width: 100px;
-    height: 100px;
-    position: static;
-  }
-  .recent-blogs-section .right-side a.blog .text{
-    margin-left: 10px;
-    width: 70%;
-    padding-top: 0;
-  }
-  .recent-blogs-section .right-side a.blog .text .info-reading{
-    font-size: .9rem;
-    /* margin-left: 30px; */
-    margin-bottom: 20px;
-  }
-
+}
+.subject ul li a{
+  display: block;
+  padding: 10px 15px;
+  background: #03a4ed;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 120px;
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.subject ul li a:hover{
+  background: #ff685f;
 }
