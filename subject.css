@@ -126,6 +126,23 @@ header .menu-toggler button{
 
 }
 
+
+
+.subject{
+  position: relative;
+}
+.subject .left-image{
+  position: absolute;
+  z-index: -1;
+  animation: move 5s forwards infinite ease-in-out;
+}
+.subject .right-image{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 110px;
+  animation: moveright 5s forwards infinite ease-in-out 1s;
+}
 .subject > h2{
   width: fit-content;
   margin: 30px auto;
@@ -137,6 +154,13 @@ header .menu-toggler button{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.subject .slides-h2,.subject .quiz-h2{
+  background: #ff685f;
+  width: fit-content;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 20px;
 }
 .subject ul{
   list-style-type: none;
@@ -150,19 +174,14 @@ header .menu-toggler button{
   flex-direction: column;
   max-width: 35rem;
   margin-top: 30px;
+  border-radius: 30px;
 }
 .subject .info-cont .slides ul{
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
 }
-/* 
-.subject .info-cont .slides ul li a{
-  padding: 10px 15px;
-  background: #03a4ed;
-  margin-left: 10px;
-  margin-right: 10px;
-} */
+
 .subject .info-cont .quiz-section{
   padding: 30px;
   background-image: url("./images/card-image.png");
@@ -173,6 +192,7 @@ header .menu-toggler button{
   flex-direction: column;
   max-width: 35rem;
   margin-top: 30px;
+  border-radius: 30px;
 }
 .subject .info-cont .quiz-section ul{
   display: flex;
@@ -198,4 +218,29 @@ header .menu-toggler button{
 }
 .subject ul li a:hover{
   background: #ff685f;
+}
+
+@keyframes move {
+  0%{
+    transform: translatey(0);
+  }
+  50%{
+    transform: translatey(50px);
+  }
+  100%{
+    transform: translatey(0);
+  }
+  
+}
+@keyframes moveright {
+  0%{
+    transform: translatey(0);
+  }
+  50%{
+    transform: translatey(50px);
+  }
+  100%{
+    transform: translatey(0);
+  }
+  
 }
